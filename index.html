@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metal Art Designers | Premium Metal & Wood Home Decor</title>
+    <meta
+      name="description"
+      content="Nairobi's premier metal and wood home decor - custom coffee tables, chairs, study tables, and more. Handcrafted with precision."
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span class="text-orange">METAL</span> ART DESIGNERS
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cart" href="#cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge bg-orange" id="cartCount">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <section id="home" class="hero-section">
+      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/product1.jpg"
+              class="d-block w-100"
+              alt="Modern Metal Coffee Table"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="display-4">Premium Metal & Wood Furniture</h1>
+              <p class="lead">
+                Handcrafted in Nairobi with precision and artistry
+              </p>
+              <a href="#products" class="btn btn-orange btn-lg"
+                >Explore Collection</a
+              >
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/product2.jpg"
+              class="d-block w-100"
+              alt="Metal Chairs Collection"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="display-4">Contemporary Designs</h1>
+              <p class="lead">
+                Blending industrial metal with natural wood elements
+              </p>
+              <a href="#products" class="btn btn-orange btn-lg"
+                >View Products</a
+              >
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/image1.jpg"
+              class="d-block w-100"
+              alt="Custom Furniture"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="display-4">Custom Designs Available</h1>
+              <p class="lead">
+                Tailored to your specific needs and preferences
+              </p>
+              <a href="#contact" class="btn btn-orange btn-lg">Request Quote</a>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro-section py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h2 class="section-title mb-4">
+              Crafting <span class="text-orange">Exceptional</span> Metal Art
+              Furniture
+            </h2>
+            <p class="lead">
+              At Metal Art Designers, we combine industrial metal with fine
+              woodworking to create unique, durable, and stylish furniture
+              pieces that elevate your living space.
+            </p>
+            <p>
+              Each piece is meticulously crafted by our skilled artisans in
+              Nairobi, ensuring the highest quality and attention to detail.
+            </p>
+            <a href="#about" class="btn btn-outline-dark mt-3">Our Story</a>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="images/product3.jpg"
+              alt="Crafting Process"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section py-5 bg-white">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title">
+            Our <span class="text-orange">Products</span>
+          </h2>
+          <p class="section-subtitle">
+            Explore our premium collection of metal and wood furniture
+          </p>
+        </div>
+
+        <div class="row">
+          <!-- Product Filter -->
+          <div class="col-12 mb-4">
+            <div class="product-filter text-center">
+              <button class="btn btn-filter active" data-filter="all">
+                All Items
+              </button>
+              <button class="btn btn-filter" data-filter="tables">
+                Tables
+              </button>
+              <button class="btn btn-filter" data-filter="chairs">
+                Chairs
+              </button>
+              <button class="btn btn-filter" data-filter="storage">
+                Storage
+              </button>
+              <button class="btn btn-filter" data-filter="custom">
+                Custom
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" id="productContainer">
+          <!-- Products will be loaded here via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5 bg-dark text-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <h2 class="section-title mb-4">
+              Our <span class="text-orange">Story</span>
+            </h2>
+            <p class="lead">
+              Founded in 2015 in Nairobi, Metal Art Designers began as a small
+              workshop with a passion for blending metal and wood into
+              functional art.
+            </p>
+            <p>
+              What started as a passion project has grown into a respected
+              furniture design studio known for our innovative designs and
+              exceptional craftsmanship.
+            </p>
+            <p>
+              Every piece we create tells a story of dedication, skill, and the
+              perfect marriage of industrial and natural materials.
+            </p>
+            <div class="mt-4">
+              <div class="d-flex align-items-center mb-3">
+                <div class="me-3">
+                  <i class="fas fa-award fa-2x text-orange"></i>
+                </div>
+                <div>
+                  <h5 class="mb-0">Award Winning Designs</h5>
+                  <p class="mb-0">Recognized by Kenya Design Awards 2022</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center mb-3">
+                <div class="me-3">
+                  <i class="fas fa-users fa-2x text-orange"></i>
+                </div>
+                <div>
+                  <h5 class="mb-0">Skilled Artisans</h5>
+                  <p class="mb-0">10+ years of combined experience</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <div class="me-3">
+                  <i class="fas fa-leaf fa-2x text-orange"></i>
+                </div>
+                <div>
+                  <h5 class="mb-0">Sustainable Materials</h5>
+                  <p class="mb-0">Ethically sourced wood and recycled metals</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <img
+              src="images/product2.jpg"
+              alt="Our Workshop"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section py-5 bg-light">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title">
+            Client <span class="text-orange">Testimonials</span>
+          </h2>
+          <p class="section-subtitle">
+            What our customers say about our products
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div
+              id="testimonialCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="testimonial-card text-center mx-auto">
+                    <div class="testimonial-img mx-auto mb-4">
+                      <img
+                        src="https://randomuser.me/api/portraits/women/32.jpg"
+                        alt="Client"
+                        class="rounded-circle"
+                      />
+                    </div>
+                    <div class="testimonial-content">
+                      <p class="testimonial-text">
+                        "The metal coffee table I ordered exceeded my
+                        expectations. The craftsmanship is impeccable, and it's
+                        the centerpiece of my living room now. Highly recommend
+                        Metal Art Designers!"
+                      </p>
+                      <h5 class="testimonial-author">Sarah K.</h5>
+                      <div class="testimonial-rating text-orange">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="testimonial-card text-center mx-auto">
+                    <div class="testimonial-img mx-auto mb-4">
+                      <img
+                        src="https://randomuser.me/api/portraits/men/45.jpg"
+                        alt="Client"
+                        class="rounded-circle"
+                      />
+                    </div>
+                    <div class="testimonial-content">
+                      <p class="testimonial-text">
+                        "I commissioned a custom dining table, and the team was
+                        fantastic to work with. They understood my vision and
+                        delivered a stunning piece that's both beautiful and
+                        functional."
+                      </p>
+                      <h5 class="testimonial-author">James M.</h5>
+                      <div class="testimonial-rating text-orange">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="testimonial-card text-center mx-auto">
+                    <div class="testimonial-img mx-auto mb-4">
+                      <img
+                        src="https://randomuser.me/api/portraits/women/68.jpg"
+                        alt="Client"
+                        class="rounded-circle"
+                      />
+                    </div>
+                    <div class="testimonial-content">
+                      <p class="testimonial-text">
+                        "The metallic chairs I purchased are not only stylish
+                        but incredibly comfortable. The perfect blend of form
+                        and function. Will definitely be ordering more pieces
+                        for my home."
+                      </p>
+                      <h5 class="testimonial-author">Amina W.</h5>
+                      <div class="testimonial-rating text-orange">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5 bg-white">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title">
+            Contact <span class="text-orange">Us</span>
+          </h2>
+          <p class="section-subtitle">
+            Get in touch for inquiries or custom orders
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="contact-info mb-5 mb-lg-0">
+              <div class="contact-item d-flex mb-4">
+                <div class="contact-icon me-3">
+                  <i class="fas fa-map-marker-alt fa-2x text-orange"></i>
+                </div>
+                <div>
+                  <h5>Our Location</h5>
+                  <p>123 Industrial Area, Nairobi, Kenya</p>
+                </div>
+              </div>
+              <div class="contact-item d-flex mb-4">
+                <div class="contact-icon me-3">
+                  <i class="fas fa-phone-alt fa-2x text-orange"></i>
+                </div>
+                <div>
+                  <h5>Phone</h5>
+                  <p>+254 712 345 678</p>
+                </div>
+              </div>
+              <div class="contact-item d-flex mb-4">
+                <div class="contact-icon me-3">
+                  <i class="fas fa-envelope fa-2x text-orange"></i>
+                </div>
+                <div>
+                  <h5>Email</h5>
+                  <p>info@metalartdesigners.co.ke</p>
+                </div>
+              </div>
+              <div class="contact-item d-flex">
+                <div class="contact-icon me-3">
+                  <i class="fas fa-clock fa-2x text-orange"></i>
+                </div>
+                <div>
+                  <h5>Working Hours</h5>
+                  <p>
+                    Monday - Friday: 8:00 AM - 5:00 PM<br />
+                    Saturday: 9:00 AM - 2:00 PM
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <form id="contactForm" class="contact-form">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  placeholder="Your Phone"
+                />
+              </div>
+              <div class="mb-3">
+                <select class="form-select" id="subject">
+                  <option value="" selected disabled>Select Subject</option>
+                  <option value="inquiry">Product Inquiry</option>
+                  <option value="custom">Custom Order</option>
+                  <option value="wholesale">Wholesale Inquiry</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-orange w-100">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+      <a
+        href="https://wa.me/254712345678"
+        target="_blank"
+        class="whatsapp-link"
+      >
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h5 class="footer-title">METAL ART DESIGNERS</h5>
+            <p>
+              Creating exceptional metal and wood furniture in Nairobi since
+              2015. Each piece is handcrafted with precision and care.
+            </p>
+            <div class="social-icons">
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="footer-title">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="#home" class="text-white">Home</a></li>
+              <li><a href="#products" class="text-white">Products</a></li>
+              <li><a href="#about" class="text-white">About</a></li>
+              <li>
+                <a href="#testimonials" class="text-white">Testimonials</a>
+              </li>
+              <li><a href="#contact" class="text-white">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="footer-title">Products</h5>
+            <ul class="footer-links">
+              <li><a href="#" class="text-white">Coffee Tables</a></li>
+              <li><a href="#" class="text-white">Dining Tables</a></li>
+              <li><a href="#" class="text-white">Chairs</a></li>
+              <li><a href="#" class="text-white">Study Tables</a></li>
+              <li><a href="#" class="text-white">Custom Orders</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="footer-title">Newsletter</h5>
+            <p>Subscribe to our newsletter for updates and promotions.</p>
+            <form class="newsletter-form">
+              <div class="input-group mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                  required
+                />
+                <button class="btn btn-orange" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr class="my-4 bg-secondary" />
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0">
+              &copy; 2023 Metal Art Designers. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <p class="mb-0">
+              Designed with <i class="fas fa-heart text-orange"></i> in Nairobi
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div
+      class="modal fade"
+      id="productModal"
+      tabindex="-1"
+      aria-labelledby="productModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productModalLabel">Product Details</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src=""
+                  id="modalProductImage"
+                  class="img-fluid rounded"
+                  alt="Product Image"
+                />
+              </div>
+              <div class="col-md-6">
+                <h3 id="modalProductName"></h3>
+                <div class="rating mb-3 text-orange">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span class="text-muted ms-2">(24 reviews)</span>
+                </div>
+                <h4 class="text-orange mb-3" id="modalProductPrice"></h4>
+                <p id="modalProductDescription"></p>
+                <div class="d-flex align-items-center mb-3">
+                  <button class="btn btn-sm btn-outline-dark" id="decrementQty">
+                    -
+                  </button>
+                  <input
+                    type="number"
+                    class="form-control qty-input mx-2"
+                    value="1"
+                    min="1"
+                    id="productQty"
+                  />
+                  <button class="btn btn-sm btn-outline-dark" id="incrementQty">
+                    +
+                  </button>
+                </div>
+                <div class="d-grid gap-2 d-md-block">
+                  <button class="btn btn-orange me-md-2" id="addToCartBtn">
+                    <i class="fas fa-shopping-cart me-2"></i>Add to Cart
+                  </button>
+                  <button class="btn btn-outline-dark" id="orderWhatsAppBtn">
+                    <i class="fab fa-whatsapp me-2"></i>Order via WhatsApp
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="cartOffcanvas"
+      aria-labelledby="cartOffcanvasLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="cartOffcanvasLabel">
+          Your Shopping Cart
+        </h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div id="cartItemsContainer">
+          <!-- Cart items will be loaded here -->
+          <div class="text-center py-5" id="emptyCartMessage">
+            <i class="fas fa-shopping-cart fa-3x text-muted mb-3"></i>
+            <p class="text-muted">Your cart is empty</p>
+          </div>
+        </div>
+        <div class="cart-summary mt-auto">
+          <hr />
+          <div class="d-flex justify-content-between mb-2">
+            <span>Subtotal:</span>
+            <span id="cartSubtotal">KSh 0.00</span>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <span>Delivery:</span>
+            <span id="cartDelivery">KSh 0.00</span>
+          </div>
+          <div class="d-flex justify-content-between fw-bold">
+            <span>Total:</span>
+            <span id="cartTotal">KSh 0.00</span>
+          </div>
+          <button class="btn btn-orange w-100 mt-3" id="checkoutBtn" disabled>
+            Proceed to Checkout
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery (for easier DOM manipulation) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
