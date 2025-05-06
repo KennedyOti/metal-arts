@@ -1,7 +1,7 @@
 /* Global Styles */
 :root {
   --primary-color: #000000;
-  --secondary-color: #ff5f1f; /* Dark orange */
+  --secondary-color: rgb(224, 97, 11); /* Dark orange */
   --light-color: #ffffff;
   --dark-color: #212529;
   --gray-color: #6c757d;
